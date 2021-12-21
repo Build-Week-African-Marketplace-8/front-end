@@ -12,7 +12,7 @@ const EditProfile = () => {
     <Link to='/'> 
       <button id='edit-info'>Edit info</button> 
     </Link>
-    links to home- not sure how to render edit username/upload photo
+    links to home-- not sure how to render edit username/upload photo
     <form>
   <label>
     Update username:
