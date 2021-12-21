@@ -1,4 +1,5 @@
 import React,{useState,useEffect} from "react";
+import { Link } from "react-router-dom";
 import axios from 'axios';
 
 import Item from './Item';
@@ -14,11 +15,16 @@ const ItemsList = () => {
     .catch(err => console.log(err))
   },[])
 
+  
+
   return(
-    
+    <div>
     <div className="ui grid container">
       {items.map(item=> <div className="four wide column"><Item key={item.ean} item={item}/></div>)}
-      </div>
+    </div>
+    <Link to="/additem"><button className="btn">Add Item</button></Link>
+    
+    </div>
   ) 
 };
 

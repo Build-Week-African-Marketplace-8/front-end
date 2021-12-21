@@ -1,26 +1,88 @@
-import React from "react";
+import React,{useState} from "react";
 import {Link} from 'react-router-dom'
 
 const initialProfile = {
   username: "",
+  file:'',
+  profilePicture:'',
+  isEditing: false
 };
 
 const EditProfile = () => {
-  return <div>
-    <h1>Profile Component</h1>
-    <p>$username</p>
-    <Link to='/'> 
-      <button id='edit-info'>Edit info</button> 
-    </Link>
-    links to home-- not sure how to render edit username/upload photo
-    <form>
-  <label>
-    Update username:
-    <input type="text" name="new username" />
-  </label>
-  <input type="submit" value="Submit" />
-</form>
-  </div>;
+  const [values,setValues] = useState(initialProfile);
+
+  const handleChange = (e) => {
+    setValues({
+      ...values,
+      [e.target.name]: e.target.value
+    })
+  }
+
+  const handleEdit = (e) => {
+    e.preventDefault();
+    setValues({
+      ...values,
+      isEditing:!values.isEditing
+    })
+  }
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setValues({
+      ...values,
+      isEditing: false
+    })
+    console.log(values)
+  }
+
+  const handleUpload = (e) => {
+    e.preventDefault();
+    const reader = new FileReader();
+    const file = e.target.files[0];
+    reader.onloadend = () => {
+      setValues({
+        ...values,
+        file: file,
+        profilePicture: reader.result
+      });
+    }
+    reader.readAsDataURL(file);
+    
+  }
+  
+  return (
+    <div className="profile-container">
+      <h2>Username: {values.username}</h2>
+      <img className="ui medium circular image" src={values.profilePicture}/>
+      <button className="btn" onClick={handleEdit}>Edit Profile</button>
+
+      {
+        values.isEditing && 
+        <form className="ui form" onSubmit={handleSubmit}>
+          <div className="field">
+          <label>Username:</label>
+          <input
+            name="username"
+            type="text"
+            value={values.username}
+            onChange={handleChange}
+          />
+          </div>
+          
+          <div className="field">
+          <label>Profile picture:</label>
+          <input
+            type="file"
+            name="profilePicture"
+            onChange={handleUpload}
+          />
+          </div>
+
+          <button className="ui inverted primary button">Submit</button>
+        </form>
+      }
+    </div>
+  )
 };
 
 export default EditProfile;
