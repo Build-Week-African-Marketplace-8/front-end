@@ -39,3 +39,12 @@
 *{
  margin: 1%;
 }
+.btn{
+  margin:2% 40%;
+  padding:1.5%;
+  background-color: rgb(89, 185, 86);
+  color:white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
