@@ -57,22 +57,28 @@ const EditProfile = () => {
       <button className="btn" onClick={handleEdit}>Edit Profile</button>
 
       {
-        values.isEditing && <form onSubmit={handleSubmit}>
-          <label>Edit username:</label>
+        values.isEditing && 
+        <form className="ui form" onSubmit={handleSubmit}>
+          <div className="field">
+          <label>Username:</label>
           <input
             name="username"
             type="text"
             value={values.username}
             onChange={handleChange}
           />
-
-          <label>Edit Profile picture</label>
+          </div>
+          
+          <div className="field">
+          <label>Profile picture:</label>
           <input
             type="file"
             name="profilePicture"
             onChange={handleUpload}
           />
-          <button className="btn">Submit</button>
+          </div>
+
+          <button className="ui inverted primary button">Submit</button>
         </form>
       }
     </div>
