@@ -51,7 +51,7 @@ const EditProfile = () => {
   }
   
   return (
-    <div>
+    <div className="profile-container">
       <h2>Username: {values.username}</h2>
       <img className="ui medium circular image" src={values.profilePicture}/>
       <button className="btn" onClick={handleEdit}>Edit Profile</button>
