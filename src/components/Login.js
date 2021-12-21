@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
+import "../App.css"
 
 const initialCredentials = {
   username: "",
@@ -32,9 +33,12 @@ const Login = (props) => {
     });
   };
 
+
+
   return (
-    <div>
-      <h1>Login</h1>
+    <div class="login">
+      <h1>Welcome To African Marketplace 8</h1>
+      <h2>Login</h2>
       <form onSubmit={appLogin}>
         <label>Username:</label>
         <input
@@ -50,8 +54,7 @@ const Login = (props) => {
           value={credentials.password}
           onChange={handleChange}
         />
-
-        <button>Submit</button>
+        <button class="login-btn">Submit</button>
       </form>
     </div>
   );
