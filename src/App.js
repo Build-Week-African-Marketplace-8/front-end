@@ -1,6 +1,8 @@
 import "./App.css";
 import React from "react";
 import { Route, Routes } from "react-router-dom";
+
+import HomePage from "./components/HomePage"
 import AddItem from "./components/AddItem";
 import Login from "./components/Login";
 import Logout from "./components/Logout";
@@ -13,7 +15,7 @@ const App = () => {
     <div>
       <Routes>
         <Route path="/login" element={<Login />} />
-        <Route path="/" element={<Login />} />
+        <Route path="/" element={<HomePage/>} />
         <Route path="/register" element={<Register />} />
         <Route path="/logout" element={<Logout />} />
         <Route path="/profile" element={<EditProfile />} />

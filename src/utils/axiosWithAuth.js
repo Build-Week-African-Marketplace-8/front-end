@@ -7,7 +7,7 @@ const axiosWithAuth = () => {
     headers: {
       authorization: token,
     },
-    baseURL: "",
+    baseURL: "https://african-marketplacedb.herokuapp.com/",
   });
 };
 

@@ -2,77 +2,6 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-*{
- margin: 1%;
-}
-
-.login {
-  background-color: #eeeeee;
-  display: flex;
-  flex-direction: column;
-  align-content:space-between;
-  justify-content: center;
-  height: 220px;
-  width: 50%;
-  margin: auto;
-  padding: 10px;
-  border: solid #4CAF50 0.5px;
-  
-}
-
-.login-btn {
-  background-color: #4CAF50; /* Green */
-  border: none;
-  color: white;
-  padding: 16px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 18px;
-  margin: 14px 6px;
-  transition-duration: 0.4s;
-  cursor: pointer;
-}
-.login-btn:hover {
-  background-color: #eeeeee;
-  color: #4CAF50;
-  border: 3px solid #4CAF50;
-}
-
 .btn{
   margin:2% 40%;
   padding:1.5%;
@@ -82,7 +11,7 @@
   border-radius: 5px;
   cursor: pointer;
 }
-.profile-container{
+.box-container{
   display: flex;
   flex-direction: column;
   align-items: center; 
@@ -94,6 +23,31 @@
 }
 img{
   border: 7px solid  rgb(240, 236, 236);
-  
 }
 
+.homepage-content{
+  display: flex;
+  align-self: center;
+  justify-content: space-between;
+  background:linear-gradient(
+    rgba(41, 41, 41, 0.7), 
+    rgba(41, 41, 41, 0.7)
+  ), url('../assets/banner.jpg') no-repeat fixed;
+  
+  height:100vh;
+}
+h1{
+  padding: 1%;
+  color:white;
+}
+a{
+ color:white;
+  text-decoration: none;
+}
+a:hover{
+  color: red;
+}
+.menu{
+ padding: 1%;
+font-size: 1.2rem;
+}

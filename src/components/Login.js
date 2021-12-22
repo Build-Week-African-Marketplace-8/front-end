@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import "../App.css"
+import axiosWithAuth from "../utils/axiosWithAuth";
 
 const initialCredentials = {
   username: "",
@@ -22,12 +23,12 @@ const Login = (props) => {
 
   const appLogin = (e) => {
     e.preventDefault();
-    axios.post("", credentials).then((res) => {
+    axiosWithAuth.post("/login", credentials).then((res) => {
       console.log(res);
-      const { token, username, role } = res.data;
-      localStorage.setItem("token", token);
-      localStorage.setItem("username", username);
-      localStorage.setItem("role", role);
+      // const { token, username, role } = res.data;
+      // localStorage.setItem("token", token);
+      // localStorage.setItem("username", username);
+      // localStorage.setItem("role", role);
 
       history.push("/itemslist");
     });
@@ -36,10 +37,11 @@ const Login = (props) => {
 
 
   return (
-    <div class="login">
-      <h1>Welcome To African Marketplace 8</h1>
+    <div className="box-container">
       <h2>Login</h2>
-      <form onSubmit={appLogin}>
+      <form onSubmit={appLogin} className="ui form">
+        <div className="field">
+
         <label>Username:</label>
         <input
           type="text"
@@ -47,6 +49,8 @@ const Login = (props) => {
           value={credentials.username}
           onChange={handleChange}
         />
+        </div>
+        <div className="field">
         <label>Password:</label>
         <input
           type="password"
@@ -54,7 +58,8 @@ const Login = (props) => {
           value={credentials.password}
           onChange={handleChange}
         />
-        <button class="login-btn">Submit</button>
+        </div>
+        <button className="large ui inverted green button">Submit</button>
       </form>
     </div>
   );

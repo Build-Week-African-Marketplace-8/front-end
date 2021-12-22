@@ -1,5 +1,4 @@
 import React,{useState} from "react";
-import {Link} from 'react-router-dom'
 
 const initialProfile = {
   username: "",
@@ -51,7 +50,7 @@ const EditProfile = () => {
   }
   
   return (
-    <div className="profile-container">
+    <div className="box-container">
       <h2>Username: {values.username}</h2>
       <img className="ui medium circular image" src={values.profilePicture}/>
       <button className="btn" onClick={handleEdit}>Edit Profile</button>
