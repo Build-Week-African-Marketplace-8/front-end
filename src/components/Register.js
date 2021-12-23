@@ -33,9 +33,11 @@ const Register = (props) => {
   };
 
   return (
-    <div>
-      <h1>Login</h1>
-      <form onSubmit={appLogin}>
+    <div className="box-container">
+      <h2>Login</h2>
+      <form onSubmit={appLogin} className="ui form">
+        <div className="field">
+
         <label>Username:</label>
         <input
           type="text"
@@ -43,6 +45,8 @@ const Register = (props) => {
           value={credentials.username}
           onChange={handleChange}
         />
+        </div>
+        <div className="field">
         <label>Password:</label>
         <input
           type="password"
@@ -50,12 +54,15 @@ const Register = (props) => {
           value={credentials.password}
           onChange={handleChange}
         />
-        <select name="role">
+        </div>
+        <div className="field">
+        <select name="role" class="ui selection dropdown">
           <option value=""></option>
           <option value="Owner">Owner</option>
           <option value="Owner">Customer</option>
         </select>
-        <button>Submit</button>
+        </div>
+        <button className="large ui inverted green button">Submit</button>
       </form>
     </div>
   );
