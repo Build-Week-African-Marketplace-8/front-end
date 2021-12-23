@@ -22,7 +22,7 @@ You will build a platform to enable these business owners to create listing for 
 
 The following chart describes initial planning for the overall user experience, and is subject to change as development progresses.
 
-![app-flow-diagram](./assets/Flow-diagram.png)
+![app-flow-diagram](./assets/Flow-diagram.PNG)
 
 ## Heroku API: https://african-marketplacedb.herokuapp.com/
 
