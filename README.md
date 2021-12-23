@@ -1,11 +1,4 @@
-#African Marketplace (Front End)
-
-## Disclaimer!
-
-Clone without forking! When you're ready to work on it, make a new branch like so:
-`git checkout -b feature/YOUR-NEW-FEATURE`
-
-You are not allowed to push to main; this is intentional to prevent breakage, like it is in the real workforce. Instead, submit a pull request, mark it as "ready for review" when it's done, and have someone else go over it so you guys can merge it to main.
+## African Marketplace (Front End)
 
 ## ☝️ **Pitch**
 
@@ -27,8 +20,38 @@ You will build a platform to enable these business owners to create listing for 
 
 ## 📦 Additional Resources
 
-**Proof of concept:**
+## Vercel URL: https://africanmarketplace.vercel.app/\
 
-[http://sautiafrica.org/](http://sautiafrica.org/)
+## heroku API: https://african-marketplacedb.herokuapp.com/
 
-**Example product reference list:** [https://docs.google.com/spreadsheets/d/1cbJQL1JbO5pAV4mss1yH0uMp58lF8TkKZt6NPkF9NLg/edit#gid=0](https://docs.google.com/spreadsheets/d/1cbJQL1JbO5pAV4mss1yH0uMp58lF8TkKZt6NPkF9NLg/edit#gid=0)
+## Meet the Team 
+
+***Person One 
+Front End React Engineer***
+
+Github: https://github.com/SheebaHashmi
+
+LinkedIn: https://linkedin.com/personOne
+
+
+***Person Two 
+Front End React Engineer***
+
+Github: https://github.com/Chriskelley55
+
+LinkedIn: https://www.linkedin.com/in/chriskelley55/
+
+
+***Person Three 
+Front End React Engineer***
+
+Github: https://github.com/matthewstack
+
+LinkedIn: https://www.linkedin.com/in/matthew-stack1/
+
+***Person Four 
+Backend Engineer***
+
+Github: https://github.com/KenjiGr
+
+LinkedIn: https://www.linkedin.com/in/kenji-greene/
