@@ -21,50 +21,51 @@ const AddItem = () => {
   };
 
   return (
-    <div>
+    <div className="box-container">
       <h1>Add Item</h1>
-      <form>
-        <h2>
-          <label>Name:</label>
-        </h2>
+      <form className="ui form">
+        <div className="field">
+        <label>Name:</label>
         <input
           type="text"
           name="name"
           value={item.name}
           onChange={handleChange}
         />
-        <h2>
-          {" "}
-          <label>Description:</label>
-        </h2>
+        </div>
+        <div className="field">
+        <label>Description:</label>
         <input
           type="text"
           name="description"
           value={item.description}
           onChange={handleChange}
-        />
-        <h2>
-          <label>Price:</label>
-        </h2>
+        /> 
+        </div>
+
+        <div className="field">
+        <label>Price:</label>
         <input
           type="text"
           name="price"
           value={item.price}
           onChange={handleChange}
         />
-        <h2>
-          <label>Commidity Category:</label>
-        </h2>
-        <select name="commoditycat">
+        </div>
+
+        <div className="field">
+        <label>Commidity Category:</label>
+        <select name="commoditycat" className="ui search dropdown">
           <option value=""></option>
           <option value="Animal Products">Animal Products</option>
           <option value="Fruits">Fruits</option>
           <option value="Seeds and Nuts">Seeds and Nuts</option>
           <option value="Vegetables">Vegetables</option>
         </select>
-        <h2>
-          <label>Subcategory:</label>
-        </h2>
+        </div>
+
+        <div className="field">
+        <label>Subcategory:</label>
         <select name="subcategory">
           <option value=""></option>
           <option value="Animal Products - Other">
@@ -79,18 +80,19 @@ const AddItem = () => {
           <option value="Cabbages">Cabbages</option>
           <option value="Capsicums">Capsicums</option>
         </select>
-        <h2>
-          <label>Commidity Country:</label>
-        </h2>
+
+        </div>
+        <div className="field">
+        <label>Commidity Country:</label>
         <select name="commoditycountry">
           <option value=""></option>
           <option value="Kenya">Kenya</option>
           <option value="Uganda">Uganda</option>
         </select>
+        </div>
 
-        <h2>
-          <label>Commidity Market:</label>
-        </h2>
+        <div className="field">
+        <label>Commidity Market:</label>
         <select name="commoditymarket">
           <option value=""></option>
           <option value="Eldoret">Eldoret</option>
@@ -100,8 +102,9 @@ const AddItem = () => {
           <option value="Kampala">Kampala</option>
           <option value="Jinja">Jinja</option>
         </select>
-        <br />
-        <button>Submit</button>
+        </div>
+
+        <button className="large ui inverted green button">Submit</button>
       </form>
     </div>
   );

@@ -13,6 +13,11 @@ import ItemsList from "./components/ItemsList";
 const App = () => {
   return (
     <div>
+      <div className="navbar">
+        <h2>African Marketplace</h2>
+        <a href="/login" className="item">Login</a>
+      </div>
+
       <Routes>
         <Route path="/login" element={<Login />} />
         <Route path="/" element={<HomePage/>} />

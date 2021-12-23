@@ -14,32 +14,27 @@
 .box-container{
   display: flex;
   flex-direction: column;
-  align-items: center; 
   border: 1px solid rgb(235, 234, 234);
   border-radius: 15px;
   box-shadow: 4px 4px 8px 1px rgb(149, 148, 148);
-  margin: 0 15%;
-  padding: 2%;
-}
-img{
-  border: 7px solid  rgb(240, 236, 236);
+  margin: 1% 15%;
+  padding: 2% 6%;
 }
 
-.homepage-content{
+.image{
+  border: 7px solid  rgb(240, 236, 236);
+}
+.navbar{
   display: flex;
   align-self: center;
   justify-content: space-between;
-  background:linear-gradient(
-    rgba(41, 41, 41, 0.7), 
-    rgba(41, 41, 41, 0.7)
-  ), url('../assets/banner.jpg') no-repeat fixed;
-  
-  height:100vh;
-}
-h1{
+  background-color: rgb(34, 34, 80);
+  font-size: 1.2rem;
   padding: 1%;
+  margin-bottom: 3%;
   color:white;
 }
+
 a{
  color:white;
   text-decoration: none;
@@ -47,7 +42,4 @@ a{
 a:hover{
   color: red;
 }
-.menu{
- padding: 1%;
-font-size: 1.2rem;
-}
+

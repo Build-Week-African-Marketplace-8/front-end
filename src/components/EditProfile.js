@@ -77,7 +77,7 @@ const EditProfile = () => {
           />
           </div>
 
-          <button className="ui inverted primary button">Submit</button>
+          <button className="large ui inverted blue button">Submit</button>
         </form>
       }
     </div>
