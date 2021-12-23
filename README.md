@@ -24,9 +24,11 @@ The following chart describes initial planning for the overall user experience, 
 
 ![app-flow-diagram](./assets/Flow-diagram.PNG)
 
-## Heroku API: https://african-marketplacedb.herokuapp.com/
+## Heroku API: 
 
-Deployed URL: https://africanmarketplace.vercel.app/\
+https://african-marketplacedb.herokuapp.com/
+
+Deployed URL: https://africanmarketplace.vercel.app
 
 ## Meet the Team 
 
