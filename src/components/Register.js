@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
+import axiosWithAuth from "../utils/axiosWithAuth";
 
 const initialCredentials = {
   username: "",
@@ -21,15 +22,17 @@ const Register = (props) => {
 
   const appLogin = (e) => {
     e.preventDefault();
-    axios.post("", credentials).then((res) => {
-      console.log(res);
-      const { token, username, role } = res.data;
-      localStorage.setItem("token", token);
-      localStorage.setItem("username", username);
-      localStorage.setItem("role", role);
+    axiosWithAuth()
+      .post("/api/auth/login", credentials)
+      .then((res) => {
+        console.log(res);
+        const { token, username, role } = res.data;
+        localStorage.setItem("token", token);
+        localStorage.setItem("username", username);
+        localStorage.setItem("role", role);
 
-      history.push("/itemslist");
-    });
+        history.push("/itemslist");
+      });
   };
 
   return (
@@ -37,30 +40,29 @@ const Register = (props) => {
       <h2>Login</h2>
       <form onSubmit={appLogin} className="ui form">
         <div className="field">
-
-        <label>Username:</label>
-        <input
-          type="text"
-          name="username"
-          value={credentials.username}
-          onChange={handleChange}
-        />
+          <label>Username:</label>
+          <input
+            type="text"
+            name="username"
+            value={credentials.username}
+            onChange={handleChange}
+          />
         </div>
         <div className="field">
-        <label>Password:</label>
-        <input
-          type="password"
-          name="password"
-          value={credentials.password}
-          onChange={handleChange}
-        />
+          <label>Password:</label>
+          <input
+            type="password"
+            name="password"
+            value={credentials.password}
+            onChange={handleChange}
+          />
         </div>
         <div className="field">
-        <select name="role" class="ui selection dropdown">
-          <option value=""></option>
-          <option value="Owner">Owner</option>
-          <option value="Owner">Customer</option>
-        </select>
+          <select name="role" class="ui selection dropdown">
+            <option value=""></option>
+            <option value="Owner">Owner</option>
+            <option value="Owner">Customer</option>
+          </select>
         </div>
         <button className="large ui inverted green button">Submit</button>
       </form>
