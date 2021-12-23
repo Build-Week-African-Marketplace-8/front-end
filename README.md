@@ -18,11 +18,12 @@ You will build a platform to enable these business owners to create listing for 
 
 1. A business `owner` can upload their `picture` to their profile.
 
-## 📦 Additional Resources
+## App-Flow Diagram
+ ![app-flow-diagram](./assets/Flow-diagram)
 
-## Vercel URL: https://africanmarketplace.vercel.app/\
+## Heroku API: https://african-marketplacedb.herokuapp.com/
 
-## heroku API: https://african-marketplacedb.herokuapp.com/
+Deployed URL: https://africanmarketplace.vercel.app/\
 
 ## Meet the Team 
 
