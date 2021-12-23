@@ -52,7 +52,7 @@ const EditProfile = () => {
   return (
     <div className="profile-container">
       <h2>Username: {values.username}</h2>
-      <img className="ui medium circular image" src={values.profilePicture} alt="User Profile Picture"/>
+      <img className="ui medium circular image" src={values.profilePicture} alt="User"/>
       <button className = "edit-btn large ui inverted green button" onClick={handleEdit}>Edit Profile</button>
 
       {

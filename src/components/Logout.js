@@ -11,9 +11,8 @@ const Logout = () => {
       .then((resp) => {
         localStorage.removeItem("token");
         push("/login");
-        console.log(resp)
       });
-  }, []);
+  }, [push]);
 
   return <div></div>;
 };
