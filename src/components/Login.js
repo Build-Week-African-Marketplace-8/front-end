@@ -59,6 +59,7 @@ const Login = (props) => {
         />
         </div>
         <button className="large ui inverted green button">Submit</button>
+        <a href="/register" className="register">Create a new account</a>
       </form>
     </div>
   );
