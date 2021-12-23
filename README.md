@@ -19,7 +19,10 @@ You will build a platform to enable these business owners to create listing for 
 1. A business `owner` can upload their `picture` to their profile.
 
 ## App-Flow Diagram
- ![app-flow-diagram](./assets/Flow-diagram)
+
+The following chart describes initial planning for the overall user experience, and is subject to change as development progresses.
+
+![app-flow-diagram](./assets/Flow-diagram.png)
 
 ## Heroku API: https://african-marketplacedb.herokuapp.com/
 
