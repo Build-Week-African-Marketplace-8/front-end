@@ -50,10 +50,10 @@ const EditProfile = () => {
   }
   
   return (
-    <div className="box-container">
+    <div className="profile-container">
       <h2>Username: {values.username}</h2>
       <img className="ui medium circular image" src={values.profilePicture}/>
-      <button className="btn" onClick={handleEdit}>Edit Profile</button>
+      <button className = "edit-btn large ui inverted green button" onClick={handleEdit}>Edit Profile</button>
 
       {
         values.isEditing && 
@@ -77,7 +77,7 @@ const EditProfile = () => {
           />
           </div>
 
-          <button className="ui inverted primary button">Submit</button>
+          <button className="large ui inverted blue button">Submit</button>
         </form>
       }
     </div>

@@ -18,11 +18,14 @@ const ItemsList = () => {
   
 
   return(
-    <div>
+   
     <div className="ui grid container">
       {items.map(item=> <div className="four wide column"><Item key={item.ean} item={item}/></div>)}
+    <div className="row">
+      <Link to="/additem">
+        <button className="large ui inverted green button">Add Item</button>
+      </Link>
     </div>
-    <Link to="/additem"><button className="btn">Add Item</button></Link>
     
     </div>
   ) 
