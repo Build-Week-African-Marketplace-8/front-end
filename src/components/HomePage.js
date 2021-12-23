@@ -11,7 +11,7 @@ return(
         <div className="ui stackable two column grid container">
             <div className='row'>
                <div className='column'>
-               <img src="https://images.unsplash.com/photo-1572402123736-c79526db405a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"/>
+               <img alt="farmer market" src="https://images.unsplash.com/photo-1572402123736-c79526db405a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"/>
                </div>
                <div className='column'>
                    <h2>TORTOR DOLORE FEUGIAT ELEMENTUM MAGNA</h2>
@@ -24,12 +24,12 @@ return(
                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, quidem molestias deserunt, fuga debitis consequatur voluptas pariatur, ipsa labore eligendi porro maxime illum placeat recusandae ipsum beatae ipsam temporibus at.</p> 
                </div>
                <div className='column'>
-               <img src="https://images.unsplash.com/photo-1552228976-93693becb498?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1392&q=80"/>
+               <img alt="marketplace"  src="https://images.unsplash.com/photo-1552228976-93693becb498?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1392&q=80"/>
                </div>
             </div>
             <div className='row'>
                <div className='column'>
-               <img src="https://images.unsplash.com/photo-1589470288084-ecad61835772?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"/>
+               <img alt="random people in market" src="https://images.unsplash.com/photo-1589470288084-ecad61835772?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"/>
                </div>
                <div className='column'>
                    <h2>MAGNA PRIMIS LOBORTIS SED ULLAMCORPER</h2>
